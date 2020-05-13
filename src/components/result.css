@@ -1,0 +1,38 @@
+.result-div
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+    font-family: Gabriola;
+}
+
+.replay-button {
+    font-size: 2rem;
+    margin-top: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: .5em 1em;
+    cursor: pointer;
+    font-family: Candara;
+    box-shadow: 3px 3px 4px black;
+}
+
+.replay-button:hover {
+    background-color: #808080;
+    color: white;
+    border-color: white;
+}
+
+.replay-button:active{
+    outline: none;
+}

@@ -1,0 +1,29 @@
+.cross
+{
+    /* margin-bottom: 3rem; */
+    padding-bottom: 3rem;
+}
+
+.line1
+{
+    transform: rotate(45deg);
+    background-color: black;
+    height: 3rem;
+    width: 0.3rem;
+    position: absolute;
+}
+
+.line2
+{
+    transform: rotate(-45deg);
+    background-color: black;
+    height: 3rem;
+    width: 0.3rem;
+    position: absolute;
+}
+
+.hovered .line1,
+.hovered .line2
+{
+    background-color: #cccccc;
+}

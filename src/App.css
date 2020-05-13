@@ -1,38 +1,66 @@
-.App {
+.heading-div
+{
+  /* height: 10rem; */
+  background-color: #cccccc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-heading
+{
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: black;
+  font-family: Candara;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.board
+{
+  /* width: 100vw;
+  height: 100vh; */
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  padding-top: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.square
+{
+  height: 4.5rem;
+  width: 4.5rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.square:first-child,
+.square:nth-child(2),
+.square:nth-child(3) {
+  border-top: none;
 }
+
+.square:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.square:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.square:last-child,
+.square:nth-child(8),
+.square:nth-child(7) {
+  border-bottom: none;
+}
+
+
+

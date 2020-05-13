@@ -1,0 +1,13 @@
+.circle
+{
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    border: 0.3rem solid black;
+    background-color: white;
+}
+
+.hovered
+{
+    border-color: #cccccc;
+}
